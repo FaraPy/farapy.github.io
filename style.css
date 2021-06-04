@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+}
+p {
+    line-height: 32px;
+}
+section h2 {
+    margin-bottom: 15px;
+}
+.sideBar {
+    position: fixed;
+    width: 18%;
+    height: 100%;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+}
+.container {
+    position: absolute;
+    width: 82%;
+    left: 18%;
+    height: 100%;
+}
+.farapy-logo {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.farapy-logo svg {
+    width: 120px;
+}
+.cls-1 {
+    fill: #013366;
+}
+.cls-2 {
+    fill: #28ab89;
+}
+.cls-6 {
+    fill: #013366;
+}
+.cls-3, .cls-4, .cls-5 {
+    fill: #28ab89;
+    animation-name: farapy;
+}
+.cls-3 {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.cls-4 {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.cls-5 {
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes farapy {
+    0% {fill: #28ab89;}
+    50% {fill: #013366;}
+    100% {fill: #28ab89;}
+}
+.content {
+    padding: 25px;
+}
+.menuList {
+    padding: 15px;
+}
+.menuList ul li {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+.menuList ul li a {
+    display: block;
+    color: #282828;
+    transition: all 0.3s;
+}
+.menuList ul li:hover a {
+    color: #28ab89;
+}
+.farapyDoc {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 16px #ccc;
+}
+.contentList {
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.contentList li {
+    list-style: inside;
+    margin-bottom: 10px;
+}
+.greenBtnLink {
+    background-color: #28ab89;
+    color: #fff;
+    border-radius: 3px;
+    padding: 3px 8px;
+    text-shadow: 0 0 1px #000;
+}
+.screenShot {
+    margin: 15px 0;
+    position: relative;
+}
+.screenShot figcaption {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 100;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.farapyDoc code {
+    background-color: #013366;
+    color: #5cff00;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 10px 0 0 15px;
+    display: inline-block;
+}
