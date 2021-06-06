@@ -17,6 +17,10 @@ p {
 section h2 {
     margin-bottom: 15px;
 }
+section h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .sideBar {
     position: fixed;
     width: 18%;
@@ -86,7 +90,7 @@ section h2 {
     color: #282828;
     transition: all 0.3s;
 }
-.menuList ul li:hover a {
+.menuList ul li a:hover {
     color: #28ab89;
 }
 .farapyDoc {
@@ -134,4 +138,20 @@ section h2 {
     border-radius: 3px;
     margin: 10px 0 0 15px;
     display: inline-block;
+}
+.hasSub {
+    position: relative;
+}
+.subPlus {
+    position: absolute;
+    right: 0;
+    content: "+";
+}
+.subMenu {
+    display: none;
+    margin-left: 15px;
+}
+.display {
+    display: block;
+    transition: all 0.3s;
 }

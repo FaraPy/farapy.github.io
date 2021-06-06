@@ -1,7 +1,15 @@
-$("a[href^='#']").click(function(e) {
-    e.preventDefault();
-    var position = $($(this).attr("href")).offset().top;
-    $("body, html").animate({
-        scrollTop: position
-    }  );
+$(document).ready(
+    function b() {
+        $(".hasSub").click(function () {
+                $(this).siblings(".subMenu").slideToggle().css("display", "block")
+            }
+        )
+    }
+    );
+$(document).ready(function (){
+    $("a[href^='#']").click(function (){
+        $('html, body').animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        });
+    });
 });
